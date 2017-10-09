@@ -6,6 +6,10 @@ git_source(:github) do |repo_name|
 end
 #Heroku settings
 ruby '2.4.2'
+
+gem 'jquery-rails'
+
+gem 'dotenv-rails', :groups => [:development, :test]
 #postgres for prudction datbase
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
@@ -14,6 +18,9 @@ gem 'rails', '~> 5.1.4'
 
 # stripe for taking payments
 gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
+
+#figaro for keys security
+gem 'figaro'
 
 #bootstrap
 gem 'bootstrap-sass'
