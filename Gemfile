@@ -16,6 +16,8 @@ gem 'rails_12factor', group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 
+gem 'letter_opener', group: :development
+
 # stripe for taking payments
 gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
 
